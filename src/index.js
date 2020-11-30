@@ -77,7 +77,7 @@ function renderAllImages(data) {
 function loadImages() {
   // when the page loads
   // make a GET request
-  const ImgUrl = 
+  const ImgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch("https://dog.ceo/api/breeds/image/random/4")
     .then(response => response.json())
     .then(renderAllImages)
